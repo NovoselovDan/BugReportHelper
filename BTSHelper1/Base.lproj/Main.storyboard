@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sample View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SampleViewController" customModule="BTSHelper1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQ4-8v-uk5">
+                                <rect key="frame" x="141" y="318.5" width="93" height="30"/>
+                                <state key="normal" title="Action button"/>
+                                <connections>
+                                    <action selector="actionBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QCc-bQ-HP3"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="8Cs-Qn-CXg">
+                                <rect key="frame" x="97.5" y="364.5" width="180" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="P1G-Zf-8ey"/>
+                                    <constraint firstAttribute="width" constant="180" id="YgQ-uA-SU1"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Oopton 1"/>
+                                    <segment title="Option 2"/>
+                                </segments>
+                            </segmentedControl>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="O3R-BU-iWF">
+                                <rect key="frame" x="16" y="28" width="343" height="270.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Testing app sample UI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MKz-Uh-QEx">
+                                <rect key="frame" x="78.5" y="153" width="218" height="26.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QQ4-8v-uk5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="47w-Fa-HkQ"/>
+                            <constraint firstItem="8Cs-Qn-CXg" firstAttribute="top" secondItem="QQ4-8v-uk5" secondAttribute="bottom" constant="16" id="7HO-fF-1zx"/>
+                            <constraint firstItem="QQ4-8v-uk5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cv2-VD-E9E"/>
+                            <constraint firstItem="QQ4-8v-uk5" firstAttribute="top" secondItem="O3R-BU-iWF" secondAttribute="bottom" constant="20" id="HkH-hq-AEa"/>
+                            <constraint firstItem="O3R-BU-iWF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="JhG-Uc-wHw"/>
+                            <constraint firstItem="MKz-Uh-QEx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="133" id="T59-GP-YK5"/>
+                            <constraint firstItem="O3R-BU-iWF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="b94-Bu-76y"/>
+                            <constraint firstItem="8Cs-Qn-CXg" firstAttribute="centerX" secondItem="QQ4-8v-uk5" secondAttribute="centerX" id="rw0-Ro-pkC"/>
+                            <constraint firstItem="O3R-BU-iWF" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="sLC-fw-4JP"/>
+                            <constraint firstItem="MKz-Uh-QEx" firstAttribute="centerX" secondItem="O3R-BU-iWF" secondAttribute="centerX" id="whI-g4-Usd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
